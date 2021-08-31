@@ -9,6 +9,7 @@ const Form = ({ setInputText }) =>{
 
     const submitTodoHandler = (e) =>{
         e.preventDefault();
+        
     }
 
     return(
@@ -20,9 +21,9 @@ const Form = ({ setInputText }) =>{
 
             <div className="select">
                 <select name="todos" className="filter-todo">
-                    <option value="all">All</option>
-                    <option value="completed">Completed</option>
-                    <option value="uncompleted">Uncompleted</option>
+                    <option value="all">Összes</option>
+                    <option value="completed">Teljesített</option>
+                    <option value="uncompleted">Teljesítetlen</option>
                 </select>
             </div>
         </form>
