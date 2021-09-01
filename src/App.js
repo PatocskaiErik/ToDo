@@ -11,18 +11,20 @@ function App() {
   const [filteredTodos, setFilteredTodos] = useState([]);
 
    useEffect(() =>{
-    console.log("valami");
-  }, [todos]);
+    filterHandler();
+  }, [todos, status]);
 
   //Functions
   const filterHandler = () =>{
     switch(status){
-      case 'completed' : 
-      setFilteredTodos(todos.filter(todo => todo.completed === true))
+      case "completed" : 
+      setFilteredTodos(todos.filter((todo) => todo.completed === true))
       break;
-      case 'uncomplited':
-        setFilteredTodos(todos.filter(todo => todo.completed === false))
+
+      case "uncompleted":
+        setFilteredTodos(todos.filter((todo) => todo.completed === false))
         break;
+
         default: 
         setFilteredTodos(todos);
         break;
@@ -36,7 +38,7 @@ function App() {
        <h1>Teendők</h1>
      </header>
      <Form inputText={ inputText } todos={ todos } setTodos={ setTodos } setInputText={ setInputText } setStatus={setStatus}/>
-     <ToDoList setTodos={ setTodos }todos={ todos }/>
+     <ToDoList setTodos={ setTodos } filteredTodos={filteredTodos} todos={ todos }/>
      </div>
   )
 }
