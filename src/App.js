@@ -41,9 +41,7 @@ function App() {
      <Form inputText={ inputText } todos={ todos } setTodos={ setTodos } setInputText={ setInputText } setStatus={setStatus}/>
      <ToDoList setTodos={ setTodos } filteredTodos={filteredTodos} todos={ todos }/>
     
-    <div>
-    <img src={PalmTree} alt="Palm Tree"/>
-    </div>
+    
     </div>
   )
 }
