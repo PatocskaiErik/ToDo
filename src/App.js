@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import Form from './Components/Form';
 import ToDoList from './Components/TodoList';
+import PalmTree from './Components/palm-tree-01.svg';
 
 function App() {
   //States
@@ -39,7 +40,11 @@ function App() {
      </header>
      <Form inputText={ inputText } todos={ todos } setTodos={ setTodos } setInputText={ setInputText } setStatus={setStatus}/>
      <ToDoList setTodos={ setTodos } filteredTodos={filteredTodos} todos={ todos }/>
-     </div>
+    
+    <div>
+    <img src={PalmTree} alt="Palm Tree"/>
+    </div>
+    </div>
   )
 }
 
