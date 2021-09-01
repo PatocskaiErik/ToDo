@@ -37,8 +37,6 @@ form input::placeholder {
 }
 
 
-
-
 form button {
   color: #e67620;
   background: #f7fffe;
@@ -78,7 +76,7 @@ form button:hover {
 }
 
 .trash-btn,
-.complete-btn {
+.completed-btn {
   background: #ff6f47;
   color: white;
   border: none;
