@@ -66,7 +66,7 @@ form button:hover {
   margin: 0.5rem;
   background: rgb(255, 255, 255);
   font-size: 1.5rem;
-  color: black;
+  color: #5b4c10;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -88,6 +88,8 @@ form button:hover {
   cursor: pointer;
   font-size: 1rem;
 }
+
+
 .complete-btn {
   background: rgb(11, 212, 162);
 }
@@ -108,6 +110,7 @@ form button:hover {
 .completed {
   text-decoration: line-through;
   opacity: 0.5;
+  color: #2d7680;
 }
 
 /*CUSTOM SELECTOR */
